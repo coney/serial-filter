@@ -7,9 +7,10 @@
 #ifndef __DEBUG_PROC_H__
 #define __DEBUG_PROC_H__
 
-#define DEBUG_PROC_NAME            "serial_filter"
-#define DEBUG_PROC_CONFIG          "config"
-#define DEBUG_PROC_TEST            "test"
+#include "common.h"
+
+#define DEBUG_PROC_NAME           "serial_filter"
+#define DEBUG_PROC_CONFIG_NAME      "blacklist"
 #define DEBUG_PROC_BUFSIZE         2048
 
 int debug_proc_init(void);

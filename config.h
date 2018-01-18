@@ -1,0 +1,6 @@
+#ifndef _CONFIG_H_INCLUDED_
+#define _CONFIG_H_INCLUDED_
+
+#define MAX_TTY_OPS_HOOKS_COUNT 8
+
+#endif // _CONFIG_H_INCLUDED_
