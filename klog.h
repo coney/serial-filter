@@ -7,12 +7,13 @@
 #ifndef __K_LOG_H__
 #define __K_LOG_H__
 
+#define KLOG_MODULE_NAME          "serial-filter"
 
 #define __KLOG_TOSTRING(x)        #x
 #define _KLOG_TOSTRING(x)         __KLOG_TOSTRING(x)
 
 #define writelog(level, fmt...)        \
-    printk(level __FILE__ ":" _KLOG_TOSTRING(__LINE__)" - " fmt)
+    printk(level KLOG_MODULE_NAME ": " __BASE_FILE__ ":" _KLOG_TOSTRING(__LINE__)" - " fmt)
 
 #define logdebug(fmt...)        writelog(KERN_DEBUG, fmt)
 #define loginfo(fmt...)         writelog(KERN_INFO, fmt)
