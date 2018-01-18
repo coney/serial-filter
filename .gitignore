@@ -1,0 +1,22 @@
+*.cmd
+*.o
+*.ko
+modules.order
+*.mod.c
+.tmp_versions
+Module.symvers
+*.d
+bin/
+
+# Visual Studio Project Files
+*.sln
+*.vcxproj*
+*.suo
+*.sdf
+*.opensdf
+.vs
+
+# IDEA Project Files
+.idea
+*.xcodeproj
+.DS_Store
